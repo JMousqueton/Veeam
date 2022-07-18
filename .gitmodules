@@ -1,3 +1,6 @@
 [submodule "VBR/VeeamNotify"]
 	path = VBR/VeeamNotify
 	url = https://github.com/tigattack/VeeamNotify
+[submodule "VBR/Veeam.Diagrammer"]
+	path = VBR/Veeam.Diagrammer
+	url = https://github.com/rebelinux/Veeam.Diagrammer
