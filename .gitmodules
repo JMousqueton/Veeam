@@ -1,0 +1,3 @@
+[submodule "VBR/VeeamNotify"]
+	path = VBR/VeeamNotify
+	url = https://github.com/tigattack/VeeamNotify
