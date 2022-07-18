@@ -1,0 +1,118 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "services": {
+            "type": "object",
+            "properties": {
+                "discord": {
+                    "type": "object",
+                    "properties": {
+                        "webhook": {
+                            "type": "string"
+                        },
+                        "user_id": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "slack": {
+                    "type": "object",
+                    "properties": {
+                        "webhook": {
+                            "type": "string"
+                        },
+                        "user_id": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "teams": {
+                    "type": "object",
+                    "properties": {
+                        "webhook": {
+                            "type": "string"
+                        },
+                        "user_id": {
+                            "type": "string"
+                        },
+                        "user_name": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "discord",
+                "slack",
+                "teams"
+            ]
+        },
+        "mentions": {
+            "type": "object",
+            "properties": {
+                "on_failure": {
+                    "type": "boolean"
+                },
+                "on_warning": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "notifications": {
+            "type": "object",
+            "properties": {
+                "on_success": {
+                    "type": "boolean"
+                },
+                "on_failure": {
+                    "type": "boolean"
+                },
+                "on_warning": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "logging": {
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "type": "boolean"
+                },
+                "level": {
+                    "type": "string"
+                },
+                "max_age_days": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "enabled",
+                "level",
+                "max_age_days"
+            ]
+        },
+        "update": {
+            "type": "object",
+            "properties": {
+                "notify": {
+                    "type": "boolean"
+                },
+                "auto_update": {
+                    "type": "boolean"
+                },
+                "auto_update_comment": {
+                    "type": "string"
+                }
+            }
+        },
+        "thumbnail": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "services",
+        "logging",
+        "thumbnail"
+    ]
+}
