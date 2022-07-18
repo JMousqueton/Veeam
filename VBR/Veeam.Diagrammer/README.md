@@ -1,1 +1,0 @@
-# Veeam.Diagrammer
